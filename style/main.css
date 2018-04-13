@@ -171,6 +171,7 @@
 	height: 16vh;
 	float: left;
 	width: 30%;
+	background-color: violet;
 }
 
 #logo_banner img {
@@ -279,6 +280,10 @@
 }
 /*Contact*/
 
+.hide_opt {
+	display: none;
+}
+
 /* ----- Content ----- */
 
 /* ----- Nav Bot ----- */
@@ -290,7 +295,6 @@
 /* ----- Footer ----- */
 
 footer {
-	height: 200px;
     clear: both;
     width: 100%;
     background-color: #05111c;
@@ -299,7 +303,7 @@ footer {
 
 #footer_text {
     text-align: center;
-    padding: 2%;
+    padding: 60px;
 }
 
 /* ----- Footer ----- */
@@ -307,7 +311,7 @@ footer {
 
 /* ----- Media ----- */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1060px) {
     .nav a:not(:first-child) {display: none;}
     .nav a.icon {
         float: right;
@@ -315,7 +319,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1060px) {
     .nav.responsive {position: fixed;}
     .nav.responsive .icon {
         position: absolute;
@@ -330,45 +334,58 @@ footer {
     }
     
     .nav a:nth-child(2) {
-		padding-right: 20%;
-		margin-left: 0;
-    }
-    
-    .nav #logo {
-        margin-left: 5%;
-    }
-	
-	#text_banner {
-		height: 25vh;
-	}
-	
-	#text_banner p {
-		font-size: 70px;
-	}
-	
-	#first_content {
-		margin-top: 0;
-	}
-	
-	.content {
-		width: 100%;
-		margin: 0 0 10% 0;
-		background-color: white;
-	}
-	
-	.content:last-child {
-		margin-bottom: 0;
-	}
-	
-	#banner_content {
+		margin: 0;
 		clear: both;
-		width: 90%;
-		height: 20vh;
-		padding:  20% 5% 0 5%;
+    }
+	
+}
+
+@media screen and (max-width: 717px) {
+	#banner_txt p {
+		padding: 10%;
+	}
+}
+
+@media screen and (max-width: 672px) {
+	#suggest p {
+		font-size: 80px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	#banner_txt p {
+		font-size: 110px;
+		padding-top: 30%;
 	}
 	
-	.where_banner {
-		height: 45vh
+	#suggest p {
+		font-size: 60px;
+	}
+	
+	#website_purpose h1 {
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 445px) {
+	#suggest p {
+		font-size: 40px;
+	}
+	
+	#banner_txt p {
+		font-size: 75px;
+		padding-top: 55%;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	#suggest p {
+		font-size: 35px;
+	}
+	
+	#banner_txt p {
+		font-size: 80px;
+		padding-top: 45%;
 	}
 }
 

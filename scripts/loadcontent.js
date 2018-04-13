@@ -112,7 +112,7 @@ function randomHome() {
 
    do {
         go3 =  Math.floor(Math.random()  * whereToGo.length);
-   } while (go ==  go3 && go3 == go2);
+   } while (go ==  go3 || go3 == go2);
 
    document.getElementById("content_container").innerHTML += 
    '<div class="home_content">'
