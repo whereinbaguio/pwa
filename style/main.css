@@ -490,6 +490,11 @@ footer {
 		padding-top: 50%;
 		font-size: 60px;;
 	}
+	
+	#banner_txt p {
+		font-size: 90px;
+		padding-top: 40%;
+	}
 }
 
 @media screen and (max-width: 370px) {

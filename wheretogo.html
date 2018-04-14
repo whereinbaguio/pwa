@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#05111c"/>
 	<link rel="shortcut icon" href="./style/imgs/logo.png">
     <title>Where In Baguio | Go</title>
     <link rel="stylesheet" href="style/main.css">
+	<link rel="manifest" href="manifest.json">
 </head>
 
 <body>   
@@ -48,6 +50,12 @@
             <p>2018 &copy; Saint Louis University</p>
         </div>
     </footer>
+	
+	<script type="text/javascript">
+		if ('serviceWorker' in navigator) {
+  			navigator.serviceWorker.register('service-worker.js');
+		}
+	</script>
 	
     <script src="scripts/script.js"></script>
     <script src="scripts/loadcontent.js"></script>
