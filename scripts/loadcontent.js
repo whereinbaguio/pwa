@@ -94,7 +94,7 @@ var WE3 = {
 
 var WE4 = {
     name: "Amare La Cucina",
-    imgSrc: "images/amare.png",
+    imgSrc: "images/Amare.png",
     description: "Want to try making your own pizza? This is the place for you. This place serves great pizza with different shapes, sizes, toppings, just how you want the pizza to be served. They provide the best pizza making experience, and all you have to do is ask.",
 	address: "#1 Villamor Drive, Barangay Lualhati, Baguio, 2600 Benguet"
 }
