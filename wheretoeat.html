@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./style/imgs/logo.png">
     <title>Where In Baguio | Eat</title>
     <link rel="stylesheet" href="style/main.css">
 </head>
@@ -21,37 +22,26 @@
     
     <div class="where_banner" id="eat_banner">
         <div id="banner_content">
-			<div id="logo_banner"></div>
 			<div id="text_banner"><p>Where To Eat</p></div>
 		</div>
     </div>
     
-    <div id="content_container">
+    <div id="data" data-con="E"></div>
+
+    <section id="content_container">
         <section id="filter">
-			<a href=""><p>Filter</p></a>
-			<div id="options">
-				<p>Name : </p>
-				<button id="" onclick="">A - Z</button>
-				<button id="" onclick="">Z - A</button>
-				<p>Price : </p>
-				<button id="" onclick="">Low to High</button>
-				<button id="" onclick="">High to Low</button>
+			<button id="dummy">Filter</button>
+			<button id="filter" class="hideBut" onclick="showOptions()">Filter</button>
+			<div id="options" class="hide">
+                <div class="nB">
+                    <p>Name : </p>
+                    <button id="AToZ" onclick="sortNameAZ()">A - Z</button>
+                    <button id="ZToA" onclick="sortNameZA()">Z - A</button>
+                </div>
 			</div>
 		</section>
-		
-        <div class="content">
-            
-        </div>
         
-        <div class="content">
-            
-        </div>
-        
-        <div class="content">
-            
-        </div>
-        
-    </div>
+    </section>
     
     <footer>
         <div id="footer_text">
@@ -60,5 +50,6 @@
     </footer>
     
     <script src="scripts/script.js"></script>
+    <script src="scripts/loadcontent.js"></script>
 </body>
 </html>

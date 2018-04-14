@@ -6,3 +6,13 @@ function myFunction() {
         x.className = "nav";
     }
 }
+
+function showOptions() {
+	var y = document.getElementById("options");
+	
+	if (y.className == "hide") {
+		y.className = "";
+	} else {
+		y.className ="hide";
+	}
+}

@@ -101,10 +101,21 @@
 }
 
 #website_purpose h1 {
-	font-size: 50px;
+	font-size: 120px;
 	color: white;
-	font-family: ananda;
 	font-weight: 500;
+	text-align: center;
+	border: 2px solid white;
+	font-family: ananda;
+}
+
+#website_purpose p {
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	padding: 5%;
+	border: 2px solid white;
+	font-family: ananda;
 }
 
 #suggest p{
@@ -167,26 +178,15 @@
 	padding: 10% 20% 10% 20%;
 }
 
-#logo_banner {
-	height: 16vh;
-	float: left;
-	width: 30%;
-	background-color: violet;
-}
-
-#logo_banner img {
-	width: 300px;
-}
-
 #text_banner {
 	height: 16vh;
 	float: left;
-	width: 70%;
+	width: 100%;
 	color: white;
 }
 
 #text_banner p {
-	font-size: 80px;
+	font-size: 150px;
 	font-family: ananda;
 	text-align: center;
 	letter-spacing: .05em;
@@ -219,19 +219,13 @@
 	color: #2f2f2f;
 }
 
-#filter a > p {
+#filter button {
+	float: left;
+	background-color: white;
+	padding: 10px 40px 10px 40px;
 	border: 2px solid black;
 	margin-right: 20px;
-		padding: 10px 10px 10px 10px ;
-}
-
-#filter a > p:nth-child(1) {
-	width: 100px;
-}
-
-#filter a {
-	text-decoration: none;
-}
+} 
 
 #filter a:visited {
 	color: black;
@@ -252,10 +246,17 @@
 	margin-bottom: 5%;
 }
 
-.content h1{
+.content h1 {
 	font-size: 50px;
 	font-family: ananda;
 	color: #2f2f2f;
+}
+
+.content h1 span {
+	font-size: 50px;
+	color: #2f2f2f;
+	font-family: sans-serif;
+	font-weight: 600;
 }
 
 .content img {
@@ -270,17 +271,77 @@
 
 /*About Us*/
 #aboutus {
-    height: 100vh;
+	height: 80vh;
+	padding: 10%;
+}
+
+#aboutus h1 {
+	text-align: center;
+	font-size: 75px;
+	font-family: ananda;
+	padding: 5%;
+}
+
+#aboutus h2 {
+	text-align: center;
+	font-size: 25px;
 }
 /*About Us*/
 
 /*Contact*/
 #contact {
-    height: 100vh;
+	padding: 10% 10% 10% 10%;
+}
+
+#contact h1 {
+	font-family: ananda;
+	font-size: 60px;
+}
+
+#contact h2 {
+	font-size: 40px;
+	margin-left: 5%;
+}
+
+#contact p {
+	margin-left: 10%;
+	font-size: 25px;
+	margin-bottom: 5%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+	padding: 20px;
+	margin-bottom: 5%;
 }
 /*Contact*/
 
-.hide_opt {
+.hideBut {
 	display: none;
 }
 
@@ -310,6 +371,11 @@ footer {
 
 
 /* ----- Media ----- */
+@media screen and (max-width: 1620px) {
+	#text_banner p {
+		font-size: 100px;
+	}
+}
 
 @media screen and (max-width: 1060px) {
     .nav a:not(:first-child) {display: none;}
@@ -338,11 +404,59 @@ footer {
 		clear: both;
     }
 	
+	#content_container {
+		width: 80%;
+		margin-left: 10%;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+	
+}
+
+@media screen and (max-width: 1160px) {
+	#dummy {
+		display: none;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.hideBut {
+		display: block;
+	}
+
+	#filter {
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	#options {
+		width: 100%;
+	}
+
+	.nB {
+		clear: both;
+		display: block;
+		padding: 5%;
+		width: 90%;
+	}
+
+	#content_container section {
+		margin-bottom: 10%;
+	}
 }
 
 @media screen and (max-width: 717px) {
 	#banner_txt p {
 		padding: 10%;
+	}
+	
+	#content_container {
+		width: 100%;
+		margin-left: 0%;
+		padding-top: 5%;
+		padding-bottom: 5%;
 	}
 }
 
@@ -372,9 +486,9 @@ footer {
 		font-size: 40px;
 	}
 	
-	#banner_txt p {
-		font-size: 75px;
-		padding-top: 55%;
+	#text_banner p {
+		padding-top: 50%;
+		font-size: 60px;;
 	}
 }
 
@@ -385,7 +499,7 @@ footer {
 	
 	#banner_txt p {
 		font-size: 80px;
-		padding-top: 45%;
+		padding-top: 50%;
 	}
 }
 
